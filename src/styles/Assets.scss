@@ -1,0 +1,139 @@
+.Assets{
+    margin-top: 100px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+
+    h2{
+        color: white;
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 1.3rem;
+        color: var(--heading-color);
+        font-weight: 400;
+    }
+    h4{
+        font-size: 1rem;
+        color: var(--heading-color);
+        font-weight: 400;
+    }
+    p{
+        color: var(--small-text-color);
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .text{
+        padding: 10px;
+        display: flex;
+        column-gap: 1.5rem;
+        align-items: center;
+    }
+
+}
+.Assets__body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+}
+
+
+.Assets__left{
+    background: var(--primary-color);
+    height: 700px;
+    border-radius: 10px;
+    .Assets__left__top{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 120px 120px;
+        color: white;
+        column-gap: 2rem;
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+    img{
+        margin-top: 30px;
+        height: 45rem;
+    }
+}
+.graph{
+    background: var(--primary-color);
+    height: 20rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.Assets__right__middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+}
+
+.Sensors{
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    h3{
+        border-bottom: 1px solid var(--small-text-color);
+        padding-bottom: 20px;
+    }
+    .checkbox{
+        i{
+            padding-top: 15px;
+        }
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.Noties{
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    span{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--body-bg);
+        color: #fff;
+        border-radius: 50px;
+        margin-left: 10px;
+        
+    }
+    .status{
+        background-color: mediumspringgreen;
+        width: 100px;
+        color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+}
+.Assets__right__bottom{
+    background: var(--primary-color);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--small-text-color);
+        button{
+            border: none;
+            border-radius: 7px;
+            color: white;
+            width: 90px;
+            background-color:blueviolet;
+        }
+    }
+    .Reminder{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        column-gap: 4rem;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--small-text-color);
+    }
+}

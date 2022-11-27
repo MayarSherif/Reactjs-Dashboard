@@ -1,0 +1,7 @@
+.layout {
+  display: flex;
+}
+.layout .main__layout {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=Layout.css.map */

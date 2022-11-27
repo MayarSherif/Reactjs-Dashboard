@@ -1,0 +1,35 @@
+@import "mixins";
+
+.wrapper{
+    width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.signup {
+    margin-top: 50px;
+    // margin-left: 450px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.signup__form {
+    @include signform;
+    height: 500px;
+
+    input {
+        @include inputSignform;
+    }
+
+}
+
+.submit__infoo {
+    button {
+        @include submitBtn;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        margin: 50px 0 20px 0;
+    }
+}

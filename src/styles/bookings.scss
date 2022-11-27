@@ -1,0 +1,120 @@
+@import "mixins";
+
+.bookings {
+    margin-top: 100px;
+  
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    .booking__title {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+    .filter__widget-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 1.5rem;
+    }
+    .filter__widget-1 select,
+    .filter__widget-2 select {
+      @include filter__widget;
+    }
+    
+  }
+  .active__search__box{
+    @include searchbox;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .car__item {
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    cursor: pointer;
+    .car__item-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .car__rent {
+        color: rgba(255, 255, 255, 0.829);
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .car__item-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    h3 {
+      font-size: 1.3rem;
+      color: var(--heading-color);
+      font-weight: 400;
+    }
+    span i {
+      font-size: 1.3rem;
+      color: var(--small-text-color);
+      cursor: pointer;
+    }
+  } 
+  
+  .car__item-top{
+     p {
+      color: var(--small-text-color);
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+  }
+
+  
+  .car__bottom-left {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    p {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      color: rgba(255, 255, 255, 0.829);
+      font-weight: 300 !important;
+    }
+    p i {
+      color: var(--secondary-color);
+    }
+  }
+
+  .booking__car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 500px){
+      grid-template-columns: repeat(2,1fr);
+    }
+    column-gap: 2em;
+    row-gap: 2em;
+  }
+  
+  .car__item-title h3 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .car__item-top {
+    margin-bottom: 15px;
+  }
+  
+  .car__img {
+    margin-bottom: 20px;
+  }
+  
+  .car__item:nth-child(2) .car__img img,
+  .car__item:nth-child(6) .car__img img,
+  .car__item:nth-child(8) .car__img img {
+    width: 75%;
+  }
+  
+  .car__item:nth-child(4) .car__img img {
+    width: 85%;
+  }
+  

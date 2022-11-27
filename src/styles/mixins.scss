@@ -1,0 +1,53 @@
+@mixin filter__widget{
+    border: none;
+    padding: 7px 20px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+@mixin searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  background: #0b0c28;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--small-text-color);
+  }
+}
+@mixin signform {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  width: 420px;
+  margin-top: 20px;
+  justify-content: center;
+  height: 240px;
+}
+@mixin inputSignform {
+  background: #0b0c28;
+  border-radius: 5px;
+  border: none;
+  width: 350px;
+  cursor: pointer;
+  margin: 10px;
+  height: 40px;
+  color: white;
+}
+
+@mixin submitBtn{
+ justify-content: center;
+  background-color: blueviolet;
+  width: 420px;
+
+}
